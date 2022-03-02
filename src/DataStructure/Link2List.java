@@ -28,8 +28,8 @@ public class Link2List {
 		Link2List el = new Link2List(70, null);
 		System.out.println(el);
 		head = el;
-		el.push(58);
 		el.push(30);
+		el.push(56);
 		el.printList();
 		
 		
