@@ -1,6 +1,6 @@
 package DataStructure;
 
-public class List5Function {
+public class List6Function {
 	
 	/**PROCESS:-
 	 *1. addNode - this method is created to add data to linedList
@@ -13,19 +13,19 @@ public class List5Function {
 	 *3. deteleAt - this method is created to delete data
 	 *4. print LinkedLisr - this method is created to print linkedList
 	 */
-	Node5 head;
+	Node6 head;
 	
 	/*
 	 * 1. Method to add node
 	 */
 	public void addNode(int data) {
-		Node5 newNode = new Node5();
+		Node6 newNode = new Node6();
 		newNode.data = data;
 
 		if (head == null) {
 			head = newNode;
 		} else {
-			Node5 pointer = head;
+			Node6 pointer = head;
 
 			while (pointer.next != null) {
 				pointer = pointer.next;
@@ -40,11 +40,11 @@ public class List5Function {
 	 */
 	public void insertAt(int index,int data)
 	{
-		Node5 newNode = new Node5();
+		Node6 newNode = new Node6();
 		newNode.data = data;
 		newNode.next = null;
 		
-		Node5 position = head;
+		Node6 position = head;
 		for(int i=0; i<index-1;i++)
 		{
 			position=position.next;
@@ -66,8 +66,8 @@ public class List5Function {
 		}
 		else
 		{
-			Node5 position= head;
-			Node5 position1=null;
+			Node6 position= head;
+			Node6 position1=null;
 			for(int i=0;i<index-1;i++)
 			{
 				position = position.next;
@@ -85,7 +85,7 @@ public class List5Function {
 		if (head == null) {
 			System.out.println("LinkedList is empty");
 		} else {
-			Node5 pointer = head;
+			Node6 pointer = head;
 			while (pointer != null) {
 				System.out.print(pointer.data + "->");
 				pointer = pointer.next;
