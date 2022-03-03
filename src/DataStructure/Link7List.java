@@ -16,7 +16,7 @@ public class Link7List {
 				 * 1. Creating Lined list
 				 * 2. Adding nodes to linkedList
 				 * 3. Printing linedList after adding nodes
-				 * 4. 
+				 * 4. Searching for node having value 30
 				 * 5.
 				 */
 				
@@ -31,10 +31,14 @@ public class Link7List {
 				list.addNode(56);
 				list.addNode(70);
 				list.addNode(30);
+				
+				/*
+				 * 3.Printing
+				 */
 				list.printLinkedList();
 				
 				/*
-				 * 
+				 * 4. Searching for node 
 				 */
 				list.search(30);
 				
