@@ -1,11 +1,11 @@
 package DataStructure;
 
-public class Node8 {
-	
+public class Node9 {
+
 	/*
 	 * Creating node
 	 */
 	public int data;
-	public Node8 next;
-	
+	public Node9 next;
+
 }

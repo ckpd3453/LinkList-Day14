@@ -1,6 +1,6 @@
 package DataStructure;
 
-public class List8Function {
+public class List9Function {
 
 	/**
 	 * PROCESS:- 1. addNode - this method is created to add data to linedList
@@ -9,23 +9,23 @@ public class List8Function {
 	 * @param data - accepting data to put it in linkedList
 	 * @return head - it returns head of linkedList
 	 * 
-	 *         2. searchInsert - this method is created to search data and add a
-	 *         node after that 3. print LinkedList - this method is created to print
+	 *         2. searchDelete - this method is created to search a node and delete
+	 *         that node 3. print LinkedList - this method is created to print
 	 *         linkedList
 	 */
-	Node8 head;
+	Node9 head;
 
 	/*
 	 * 1. Method to add node
 	 */
 	public void addNode(int data) {
-		Node8 newNode = new Node8();
+		Node9 newNode = new Node9();
 		newNode.data = data;
 
 		if (head == null) {
 			head = newNode;
 		} else {
-			Node8 pointer = head;
+			Node9 pointer = head;
 
 			while (pointer.next != null) {
 				pointer = pointer.next;
@@ -36,21 +36,18 @@ public class List8Function {
 	}
 
 	/*
-	 * 2. Method to search LinkedList and insert a node after 30
+	 * 2. Method to search a node in LinkedList and delete.
 	 */
-	public void searchInsert(int searchKey, int data) {
-		Node8 current = head;
-		Node8 newNode = new Node8();
-		newNode.data = data;
-		int i = 0;
+	public void searchDelete(int searchKey) {
+		Node9 previous = head;
+		Node9 current = previous.next;
 		while (current != null) {
 
 			if (current.data == searchKey) {
-				System.out.println("Need to add 40 after 30");
-				newNode.next = current.next;
-				current.next = newNode;
+				System.out.println("Need to search 40 and delete it");
+				previous = previous.next;
 			}
-			i++;
+			previous.next = current;
 			current = current.next;
 		}
 	}
@@ -62,7 +59,7 @@ public class List8Function {
 		if (head == null) {
 			System.out.println("LinkedList is empty");
 		} else {
-			Node8 pointer = head;
+			Node9 pointer = head;
 			while (pointer != null) {
 				System.out.print(pointer.data + "->");
 				pointer = pointer.next;
