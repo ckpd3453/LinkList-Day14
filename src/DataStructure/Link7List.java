@@ -1,6 +1,6 @@
 package DataStructure;
 
-public class Link6List {
+public class Link7List {
 
 	/**
 	 * 1: Main method for manipulation linkedList
@@ -16,37 +16,28 @@ public class Link6List {
 				 * 1. Creating Lined list
 				 * 2. Adding nodes to linkedList
 				 * 3. Printing linedList after adding nodes
-				 * 4. Deleting node from end of the linkedlist
-				 * 5. Printing linedList after deleting node from end of the linkedlist
+				 * 4. 
+				 * 5.
 				 */
 				
 				/*
 				 * 1. Creating Lined list
 				 */
-				List6Function list = new List6Function();
+				List7Function list = new List7Function();
 				
 				/*
 				 * 2. Adding nodes to linkedList
 				 */
 				list.addNode(56);
 				list.addNode(70);
+				list.addNode(30);
 				list.printLinkedList();
 				
 				/*
-				 *3. Inserting node in between of linkedList 
+				 * 
 				 */
-				list.insertAt(1,30);
-				list.printLinkedList();
-
-				/*
-				 *4. Deleting node from last of the linkedList
-				 */
-				list.deleteAt(2);
+				list.search(30);
 				
-				/*
-				 * 5. Printing
-				 */
-				list.printLinkedList();
 				 
 		}
 
