@@ -11,6 +11,7 @@ public class LinkFunction9 {
 	 * 
 	 *2. searchDelete - this method is created to search a node and delete that node 
 	 *3. print LinkedList - this method is created to print linkedList
+	 *4. Size - this method is created to get the size of linkedList
 	 */
 	NodeN head;
 
@@ -62,6 +63,24 @@ public class LinkFunction9 {
 				pointer = pointer.next;
 			}
 			System.out.println();
+		}
+	}
+	/*
+	 * 4.created method to check the size of linked list
+	 */
+
+	public int getSize() {
+		int count = 0;
+		if (head == null)
+			return count;
+		else {
+			NodeN temp = head;
+			while (temp != null) {
+				count++;
+				temp = temp.next;
+			}
+			System.out.println("Size is " + count);
+			return count;
 		}
 	}
 }

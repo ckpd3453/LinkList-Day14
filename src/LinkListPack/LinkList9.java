@@ -13,6 +13,7 @@ public class LinkList9 {
 		 * 2. Adding nodes to linkedList 
 		 * 3. Searching for given data and delete that data from linkedList 
 		 * 4. Printing LinkedList
+		 * 5. To get the size of LinkedList
 		 */
 
 		/*
@@ -37,6 +38,11 @@ public class LinkList9 {
 		 * 4. To Print
 		 */
 		list.printLinkedList();
+		
+		/*
+		 * 5. To Get the size of LinkedList
+		 */
+		list.getSize();
 
 	}
 
